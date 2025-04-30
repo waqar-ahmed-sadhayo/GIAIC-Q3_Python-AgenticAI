@@ -1,6 +1,9 @@
 import streamlit as st
 import re
 
+# Show on Tab
+st.set_page_config(page_title="🔐 Ultimate Password Strength Checker", layout="wide")
+
 # Title of the App
 st.title("🔐 Ultimate Password Strength Checker")
 
