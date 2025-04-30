@@ -1,7 +1,3 @@
-import streamlit as st
-import pandas as pd
-from io import BytesIO
-
 # Set page configuration
 st.set_page_config(page_title="📁 File Converter & Cleaner", layout="wide")
 st.title("📁 File Converter & Cleaner")
