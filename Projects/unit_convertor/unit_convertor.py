@@ -19,7 +19,8 @@ def convert_units(value, unit_from, unit_to):
         return "Conversion not supported"
 
 
-st.title("Unit Converter")
+st.set_page_config(page_title="📏🔁 Unit Converter", layout="wide")
+st.title("📏🔁 Unit Converter")
 
 value = st.number_input("Enter the number:")
 
