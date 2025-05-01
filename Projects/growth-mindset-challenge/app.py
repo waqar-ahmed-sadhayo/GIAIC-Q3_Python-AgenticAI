@@ -2,7 +2,10 @@ import streamlit as st
 import numpy as np
 import joblib  # For loading scaler and model
 
-scaler = joblib.load('./Scaler.pkl')
+try:
+    scaler = joblib.load('Scaler.pkl')
+except FileNotFoundError:
+    st.error("Scaler.pkl file not found. Make sure it's uploaded with the app.")
 
 model = joblib.load('./model.pkl')
 
