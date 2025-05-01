@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib  # For loading scaler and model
 
-scaler = joblib.load('E:\GIAIC-Q3_Python-AgenticAI\Projects\growth-mindset-challenge\Scaler.pkl')
+scaler = joblib.load(r'E:\GIAIC-Q3_Python-AgenticAI\Projects\growth-mindset-challenge\Scaler.pkl')
 
 model = joblib.load('model.pkl')
 
