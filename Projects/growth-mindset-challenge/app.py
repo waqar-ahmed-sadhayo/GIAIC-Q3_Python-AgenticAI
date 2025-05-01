@@ -22,8 +22,13 @@ except FileNotFoundError:
     st.error("model.pkl file not found. Make sure it's uploaded with the app.")
     st.stop()
 
+
+st.set_page_config(page_title="🏠 Real Estate Price Predictor 🧮", layout="wide")
+
 # App title
-st.title("Real Estate Price Prediction App")
+st.title("🏠 Real Estate Price Predictor 🧮")
+st.subheader("Estimate your property's worth instantly!")
+
 st.divider()
 
 # Inputs
@@ -35,7 +40,7 @@ X = [bed, bath, size]
 st.divider()
 
 # Button and prediction
-predict_button = st.button("Predict!")
+predict_button = st.button("📈 Predict!")
 st.divider()
 
 if predict_button:
@@ -45,3 +50,8 @@ if predict_button:
     st.success(f"The predicted price is: {prediction:.2f}")
 else:
     st.info("Click the button to generate prediction.")
+
+
+st.markdown("""
+Develop with 💖 *Waqar Ahmed*
+""")
