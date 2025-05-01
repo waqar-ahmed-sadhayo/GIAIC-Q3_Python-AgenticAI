@@ -2,9 +2,9 @@ import streamlit as st
 import numpy as np
 import joblib  # For loading scaler and model
 
-scaler = joblib.load('Scaler.pkl')
+scaler = joblib.load('./Scaler.pkl')
 
-model = joblib.load('model.pkl')
+model = joblib.load('./model.pkl')
 
 st.title("Real Estate Price Prediction App")
 
