@@ -4,3 +4,4 @@ pandas
 numpy
 scikit-learn
 Scaler.pkl
+model.pkl
