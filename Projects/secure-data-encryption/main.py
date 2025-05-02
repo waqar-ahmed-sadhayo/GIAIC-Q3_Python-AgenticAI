@@ -84,6 +84,8 @@ def retrieve_data(user_id, passkey):
         st.error(f"Incorrect passkey. Attempts left: {attempts_left}")
 
 
+st.set_page_config(page_title="🔐 CryptoVaul", layout="wide")
+
 # Login Page
 def login_page():
     st.title("🔐 Reauthorization Required")
@@ -111,8 +113,8 @@ def main():
     menu = st.sidebar.radio("Navigate", ["Home", "Insert Data", "Retrieve Data", "Login"])
 
     if menu == "Home":
-        st.title("Welcome to Secure Data Encryption System")
-        st.write("Use the sidebar to insert or retrieve encrypted data.")
+        st.title("Welcome to Secure Data Encryption System 🔐")
+        st.write("Use the sidebar to insert or retrieve encrypted data 🛠️📁.")
 
     elif menu == "Insert Data":
         st.title("📥 Store Your Secure Data")
@@ -140,6 +142,10 @@ def main():
     elif menu == "Login":
         login_page()
 
+    st.markdown("""
+        ---
+        Developed with 💖 by **Waqar Ahmed Sadhayo**
+        """)
 
 
 if __name__ == "__main__":
