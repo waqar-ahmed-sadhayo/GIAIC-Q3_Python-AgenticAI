@@ -5,10 +5,10 @@ class Bank:
          self.account_holder = account_holder
 
      @classmethod
-     def change_bank_name(cls, name):
+     def change_bank_name(cls, name): # Class Method
          cls.bank_name = name
 
-     def display_info(self):
+     def display_info(self):  # Public Method
         print(f"Account Holder: {self.account_holder}")
         print(f"Bank: {self.bank_name}")
 
