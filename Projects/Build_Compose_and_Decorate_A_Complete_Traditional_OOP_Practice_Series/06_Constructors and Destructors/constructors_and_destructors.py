@@ -9,4 +9,5 @@ class Logger:
 # Creating the object
 obj1 = Logger("Waqar")
 
-del obj1
+# Force the destructor to run immediately
+del obj1  # This will trigger the __del__ method
