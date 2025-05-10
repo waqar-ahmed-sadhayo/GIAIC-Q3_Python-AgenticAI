@@ -6,18 +6,17 @@ class Engine:
         return f"Engine with {self.horse_power} HP is starting..."
 
 class Car:
-    def __init__(self, brand, engine):
+    def __init__(self, brand, horse_power):
         self.brand = brand
-        self.engine = engine   # Composition: Engine is part of Car
+        self.engine = Engine(horse_power)    # Composition: Engine is created inside Car
 
     def strat_car(self):
         return f"{self.brand} car: {self.engine.start()}"
 
-# Create an Engine object
-my_engine = Engine(150)
 
-# Pass the Engine object to the Car
-my_car = Car("Toyota", my_engine)
+# Now we don't create Engine separately
+my_car = Car("Toyota", 150)   # Create object for Car Class
 
 # Access the Engine's method through the Car class
 print(my_car.strat_car())
+
